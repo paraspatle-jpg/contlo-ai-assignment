@@ -1,7 +1,9 @@
 ﻿**Q1**  
+ 
 In this case, if we retrain the model with n+1 features, we will get the similar weight for n+1 th feature and n th feature, given that we have a accurate Learning rate which will help model identify the importance of that feature correctly. An accurate learning rate will help model identify that n and n+1 are of same importance as they are duplicated so they will have same weights. Overall when comparing new weights and old weights, the new weights may vary from older weights to account for redundancy created by the duplication.
 
 **Q2**
+
 In the initial analysis, we encounter three options for comparison:
 
 a. We have too little data to conclude that A is better or worse than any other template with 95% confidence.
@@ -17,9 +19,11 @@ Therefore, the accurate choice is:
 b. E is better than A with over 95% confidence, B is worse than A with over 95% confidence. You need to run the test for longer to tell where C and D compare to A with 95% confidence.
 
 **Q3**
+
 The effect of features being sparse is that the computational cost of each gradient descent iteration of logistic regression is reduced, which results in the computational cost of **O(m*k)**. This is because in each iteration, we only need to compute the gradient with respect to the non-zero features. As a result, the computational cost is proportional to the number of non-zero features, which is much smaller than the number of total features.
 
 **Q4**
+
 1.  **Run V1 classifier on 1 Million random stories:**
     
     -  Advantages: This method leverages the existing V1 classifier to identify instances near the decision boundary, potentially providing nuanced examples for the model. However, its effectiveness relies on the assumption that V1 generalizes well to new data.
